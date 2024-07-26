@@ -1,10 +1,22 @@
-import { FormInput } from '../components/FormInput'
+import { FormInput, SubmitBtn } from '../components'
+import { Form, Link } from 'react-router-dom'
+
 const Login = () => {
-    console.log(uyv)
     return (
-        <div>
-            <FormInput></FormInput>
-        </div>
+        <section className='h-screen grid place-items-center'>
+            <Form method='post'
+                className='card w-96 p-8 bg-base-100 flex flex-col gap-y-4'>
+                <h4 className='text-center text-3xl font-bold'>Login</h4>
+                <FormInput type='email' name='email' label='email' defaultValue='test@test.com'></FormInput>
+                <FormInput type='password' name='password' label='password' defaultValue='secret'></FormInput>
+                <div className='mt-4'>
+                    <SubmitBtn text='login'></SubmitBtn>
+                </div>
+                <button type='button' className='btn btn-secondary btn-block'>guest user</button>
+                <p className='text-center'>Not a member yet? <Link to='/register' className='ml-2'></Link></p>
+
+            </Form>
+        </section>
     )
 }
 
