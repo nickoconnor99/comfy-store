@@ -7,5 +7,13 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/typography'), require('daisyui')],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  daisyui: {
+    styled: true,
+    themes: ['winter', 'dracula'],
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false
+  }
 }
