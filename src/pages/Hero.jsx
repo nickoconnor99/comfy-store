@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
-import hero1 from '../assets/hero1.webp';
-import hero2 from '../assets/hero2.webp';
-import hero3 from '../assets/hero3.webp';
-import hero4 from '../assets/hero4.webp';
+import hero1 from '../assets/hero5.jpg';
+import hero2 from '../assets/hero6.jpg';
+import hero3 from '../assets/hero7.jpg';
+import hero4 from '../assets/hero8.jpg';
 
 const carouselImages = [hero1, hero2, hero3, hero4]
 const Hero = () => {
@@ -15,10 +15,10 @@ const Hero = () => {
                 </h1>
 
                 <p className='mt-8 max-w-xl text-lg leading-8'>
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-                    cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
-                    aliqua. Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui lorem cupidatat commodo.
+                    🎈PowPow balloons by Paulina
+                    🎈Any occasion, big or small
+                    🎈 Limerck and surrounding areas
+                    🎈 DM for availability
                 </p>
                 <div className='mt-10 '>
                     <Link to='products' className='btn btn-primary '>

@@ -3,6 +3,8 @@ import { FaBarsStaggered } from 'react-icons/fa6';
 import { NavLink } from 'react-router-dom';
 import Navlinks from './Navlinks';
 import { useEffect, useState } from 'react';
+import logo from '../assets/360080291_200675059594451_4048102465236019403_n.jpg'
+
 
 const themes = {
     winter: 'winter',
@@ -35,9 +37,9 @@ const Navbar = () => {
                     {/* Title */}
                     <NavLink
                         to='/'
-                        className='hidden lg:flex btn btn-primary text-3xl items-center '
+                        className='hidden lg:flex max-w-[200px] h-[200px]'
                     >
-                        C
+                        <img src={logo}></img>
                     </NavLink>
                     {/* DROPDOWN */}
                     <div className='dropdown'>
